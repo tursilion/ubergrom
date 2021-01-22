@@ -1,0 +1,19 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Atmel Studio Solution File, Format Version 11.00
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "ubergrom", "ubergrom.cproj", "{B716B3F0-EBB6-4801-8A3E-A1C0DF45A0D1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		default|AVR = default|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B716B3F0-EBB6-4801-8A3E-A1C0DF45A0D1}.default|AVR.ActiveCfg = default|AVR
+		{B716B3F0-EBB6-4801-8A3E-A1C0DF45A0D1}.default|AVR.Build.0 = default|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
