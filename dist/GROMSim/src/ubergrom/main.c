@@ -1,11 +1,8 @@
-// TODO: - add flow control to the UART
-// - add the ability to swap out serial for I2C (if the pins are free), a bit is enough
-
-
 // UberGROM simulation - run on internal clock, ATMEGA1284P
 // This version supports multiple GROM bases and various
 // hardware as described in the GROM+ Interface manual
 //
+
 // This is NOT GPL or any other ""free"" software license. 
 // If you want to create any form of derived work or otherwise use my code, 
 // you MUST contact me and ask. I don't consider this a huge obstacle in
@@ -55,12 +52,7 @@
 //
 // http://harmlesslion.com - visit the web page for contact info
 //
-// Minimal connection:
-// 8 data pins
-// MDIR/GREADY/GSEL
-// = 11 pins
-// Bases require additional pins
-//
+
 // Pin assignments
 // 
 // PA0 - ADC0
@@ -99,21 +91,13 @@
 // PD6 - GPIO Pin 20
 // PD7 - GPIO Pin 21
 
-// ATTINY84 version
-// PA0-PA7 = TI Data 7-0 (bitflipped) (6-13)
-// PB0 = *GSEL    	2											cart 21	
-// PB1 = A14/Mode		3											cart 23
-// PB2 = DBIN/MDIR	4		(disable reset)		cart 25
-// PB3 = GREADY  		5											cart 31
-
 // Note: this version treats all blocks as 8k, not 6k,
 
 // There is no guarantee of sane behaviour if you map two devices to the same
 // space, even if you think it should work. You have lots of address space,
 // please don't attempt deliberate collisions.
 
-// the GROM bus is pulled up in the console (maybe 2.2kohm? If yes, override around 3mA).
-//  To reduce conflicts with future devices,
+// the GROM bus is pulled up in the console. To reduce conflicts with future devices,
 // this system will not allow you to conflict with the console GROM space (0000,2000,4000)
 // and it will not. Change this behaviour at your own risk but please do not distribute
 // cartridges that do so (my own MPD will use a variant of this code inside the console,

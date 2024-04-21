@@ -58,7 +58,7 @@
 #include "main.h"
 #include "grom.h"
 
-// cartridge data used if we are enabled after all
+// cartrdige data used if we are enabled after all
 // the main code decides if we are enabled and need to be called, so
 // we can just check addresses
 extern const unsigned char GROM6000[] PROGMEM;
